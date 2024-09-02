@@ -9,7 +9,7 @@ expect(res.status).toBe(200);
 
 it('should return JSON response for /api route', async () => {
 const res = await request(app).get('/api');
-expect(res.body).toHaveProperty('message', 'Hello from the API route!');
+expect(res.body).toHaveProperty('message', 'Broken test');
 });
 
 it('should return 200 OK for / route', async () => {
